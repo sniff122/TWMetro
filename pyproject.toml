@@ -4,7 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "TWMetro"
-version = "0.0.1"
+dynamic = ["version"]
+readme = "README.md"
 authors = [
     { name="Lewis Foster", email="lewis@lewisfoster.foo"},
 ]
@@ -16,3 +17,5 @@ classifiers = [
 dependencies = [
     "requests>=2.32.5",
 ]
+
+[tool.setuptools_scm]
